@@ -7,11 +7,14 @@ class findFactorial {
     public static void main(String[] args) {
       int res = findFactorial(5);
         if(res == 0){
-            System.out.println("invalid number");
+            System.out.println("invalid number ! ");
         }else {
             System.out.println(res);
+            //test by rohit
         }
     }
+
+
     
     public static int findFactorial(int num){
         if(num < 0){
