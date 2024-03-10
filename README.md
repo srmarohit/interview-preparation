@@ -56,3 +56,8 @@
 #### WAP to find the factorial of any given number.
 #### WAP to check whether number is prime or not.
 #### WAP to find the sum of fibonacci series .
+#### WAP to check whether given string is palindrome or not.
+#### WAP to check whether given strings are anagram to each others.
+#### WAP to count the occurence of character in the given string.
+### WAP to swap two variables with out using third(temp) variable.
+### WAP to remove the specific word(string) from given sentences.
