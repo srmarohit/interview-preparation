@@ -14,9 +14,9 @@ function addMatrices(mat1, mat2) {
         const resultRow = [];
         let colLength = mat1[row].length;
         for (let col = 0; col < colLength; col++) {
-          resultRow.push(mat1[row][col] + mat2[row][col]);
-          result.push(resultRow);
+          resultRow.push(Number(mat1[row][col]) + Number(mat2[row][col]));
         }
+        result.push(resultRow);
       }
     }
 
