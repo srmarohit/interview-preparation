@@ -1,6 +1,8 @@
 #include "stdio.h"
 
 void get_min_max(int f_num, int s_num, int *min, int *max);
+void euclideam_calc(int f_num, int s_num);
+int euc_hcf(int n1, int n2);
 
 void main()
 {
@@ -34,11 +36,30 @@ void main()
     }
 
     printf("\r\nLCM is %d",LCM);
-
+    euclideam_calc(first_num, sec_num);
 }
 
 void get_min_max(int f_num, int s_num, int *min, int *max)
 {
     *max = f_num > s_num ? f_num : s_num;
     *min = f_num > s_num ? s_num : f_num;
+}
+
+int euc_hcf(int n1, int n2)
+{
+    if(n2 == 0)
+        return n1;
+    euc_hcf(n2, n1%n2);
+}
+
+
+
+void euclideam_calc(int f_num, int s_num)
+{
+    printf("\r\nEuclidean HCF and LCM caluclation");
+    int euc_HCF = euc_hcf(f_num, s_num);
+    int euc_LCM = (f_num*s_num)/euc_HCF;
+
+    printf("\r\nEuclidean HCF is - %d", euc_HCF);
+    printf("\r\nEuclidean LCM is - %d", euc_LCM);
 }
